@@ -29,7 +29,7 @@ function Signup() {
             return handelError('All fields are required!')
         }
         try{
-            const url = "http://localhost:3000/auth/signup";
+            const url = "https://login-api-murex.vercel.app/auth/signup";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
